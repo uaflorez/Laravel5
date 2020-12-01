@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+//use App\Models\Video;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*$videos  = Video::all();
+    foreach($videos as $video){
+        echo $video->title. '<br/>';
+        //echo $video->user->email;
+        foreach ($video->comments as $comment){
+            echo $comment->body;
+        }
+    }
+    die();*/
+
