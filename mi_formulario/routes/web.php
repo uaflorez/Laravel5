@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('formulario', function () {
-    return 'Estas en el formulario';
-});
-Route::view('form', 'formulario');
+Route::get('/', 'PageController@inicio');
+
+Route::get('form','PageController@form')->name('form');
