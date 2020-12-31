@@ -13,9 +13,11 @@ class FormularioController extends Controller
      */
     public function index()
     {
-        &competencias = DB::table('competencias')->get();
+        $competencias = DB::table('competencias')
+                ->nombre()
+                ->get();
 
-        return view('formulario.index', compact('formulario'))
+        return view('formulario.index', compact('formulario'));
     }
 
     /**
