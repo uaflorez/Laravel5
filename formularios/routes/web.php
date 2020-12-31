@@ -17,7 +17,7 @@ use App\Indicator;
 */
 
 Route::get('/', 'FormController@home')->name('home');
-Route::get('entrevista', 'FormController@entrevista')->name('entrevista ');
+Route::get('entrevista', 'FormController@entrevista')->name('entrevista');
 Route::post('entrevista', 'FormController@store')->name('entrevista.store');
 
 Route::get('competencia','CompeController@competencia')->name('competencia');

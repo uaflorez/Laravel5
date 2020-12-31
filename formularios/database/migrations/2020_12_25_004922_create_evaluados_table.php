@@ -24,12 +24,12 @@ class CreateEvaluadosTable extends Migration
             $table->text('mejora_prim');
             $table->string('cumple_prim');
             $table->string('no_cumple_prim');
-            $table->string('consideración_prim');
+            $table->string('consideracion_prim');
             $table->text('fortaleza_seg');
             $table->text('mejora_seg');
             $table->string('cumple_seg');
             $table->string('no_cumple_seg');
-            $table->string('consideración_seg'); 
+            $table->string('consideracion_seg'); 
             $table->timestamps();
         });
     }

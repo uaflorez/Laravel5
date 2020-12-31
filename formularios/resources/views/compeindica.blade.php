@@ -28,17 +28,21 @@
                             <th>Descripcion</th>
                         </thead>
                         <tbody>
-                            @foreach ($compeindica as $compeindica)
+                            @foreach ($competencias as $competencia)
                             <tr>
                                 <td>
-                                    {{ $compeindica->compe_id  }}
-                                </td>
-                                
-                                <td>
-                                    {{ $compeindica->indica_id }}
+                                    {{ $competencia->nombre }}  
                                 </td>
                             </tr>
-                            @endforeach                            
+                            @foreach ($indicador as $indicadores)
+                            <tr>
+                                <td>
+                                    {{ $indicadores->description}}  
+                                </td>
+                            </tr>
+                            @endforeach  
+                            @endforeach
+                                                    
                         </tbody>
                     </table>
                 </div>

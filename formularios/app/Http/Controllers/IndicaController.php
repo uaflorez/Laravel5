@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Indicator;
+use App\Evaluado;
 
 class IndicaController extends Controller
 {
@@ -16,7 +17,6 @@ class IndicaController extends Controller
                 
         $newIndicator = new Indicator;
         $newIndicator->description = $request->input('indicador');
-        // $newIndicator->compe_id = $competencias->input('nombre');
         $newIndicator->save();
         return redirect()->route('indicator');
         

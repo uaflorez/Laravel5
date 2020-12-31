@@ -48,99 +48,36 @@
                                     </div>
                                 </div>
                             </div>
-                            <br>
                             <table class="table table-hover table_sm">
                                 <thead>
-                                    <tr>
-                                        <th>COMPETENCIA</th>
-                                        <th>INDICADOR CONDUCTUAL</th>
-                                        <th>PUNTUACION (DE 1 A 3)</th>  
-                                    </tr>
+                                    <th>Competencia</th>
+                                    <th>Descripcion</th>
+                                    <th>Puntuacion de (1 a 3)</th>
                                 </thead>
                                 <tbody>
+                                    @foreach ($indicador as $indicadores)
                                     <tr>
-                                        <td>PLANEACION Y ORGANIZACION</td>
-                                        <td>Realiza saludo de bienvenida</td>
-                                        <td></td>
+                                        <td>
+                                            {{ $indicadores->compe_id }}
+                                        </td>
+                                        <td>
+                                            {{ $indicadores->description }}
+                                        </td>
                                     </tr>
+                                    @endforeach
                                     <tr>
-                                        <td></td>
-                                        <td>Define el propósito de la llamada</td>
-                                        <td></td>
+                                        <td>
+
+                                        </td>
                                     </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>Realiza el cierre de veta (logra aceptación por parte del cliente)</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>Oferta el producto - Argumentando beneficios</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>PENSAMIENTO ANALITICO</td>
-                                        <td>Maneja las objeciones ( Otorga respuestas precisas)</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>Realiza cierre de venta (Logra aceptación por parte del cliente)</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>ORIENTACIÓN Y DESARROLLO DE PERSONAS</td>
-                                        <td>Vocaliza de forma clara y maneja buen tono de voz</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>Es preciso y concreto al brindar la información (precios, fechas, entre otros)</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>ORIENTACIÓN AL LOGRO CON CALIDAD</td>
-                                        <td>Escucha activa ( Pregunta un dato solo una vez)</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>Se muestra seguro ( Evita dubitativas, muletillas, diminutivos)</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>Hace uso de etiqueta telefónica (Utiliza palabras de cortesía - Por favor - Gracias)</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>AUTOGESTIÓN </td>
-                                        <td>Se muestra altamente interesado por el ejercicio</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>Se muestra activo y enérgico durante la llamada</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                                <tbody>
-                                    <tr>
-                                        <td>TOTAL</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                
                                 </tbody>
                             </table>
+                            <br>
+                            <div class="form-group">
+                                <label for="">TOTAL</label>
+                                <input type="text" class="form-control" name="total">
+                            </div>
+                            <br>                            
                             <table class="table table-hover table_sm">
                                 <thead>
                                     <th>CONVERSION</th>
@@ -176,7 +113,7 @@
                             <br>
                             <div class="form-group">
                                 <label for="">FORTALEZAS</label>
-                                <input type="text" class="form-control" name="fortaleza_prim">
+                                <input type="text" class="form-control" name="fortaleza_pim">
                             </div> 
                             <div class="form-group">
                                 <label for="">OPORTUNIDADES DE MEJORA</label>
@@ -223,7 +160,9 @@
                                 <label for="">OPORTUNIDADES DE MEJORA</label>
                                 <input type="text" class="form-control" name="mejora_seg">
                             </div> 
-                                        
+                            <br>
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <a href="{{ route('home') }}" class="btn btn-danger">Cancelar</a>            
                                     
                         </form>
                         </div>                        
@@ -234,9 +173,8 @@
     </div>
     <br>
     
-<!-- 
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                            <a href="{{ route('home') }}" class="btn btn-danger">Cancelar</a> --}} -->
+
+                            
     <!-- <div class="row nota">
         <div class="col s12 ">
             <div class="card-title black-text">
