@@ -33,8 +33,8 @@
     </body>
 </html>
 
-{{-- va en el head --}}
- {{-- <!-- Styles -->
+<!-- va en el head -->
+  <!-- Styles
         <style>
             html, body {
                 background-color: #fff;
@@ -86,4 +86,4 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style> --}}
+        </style>  -->
