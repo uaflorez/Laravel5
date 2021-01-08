@@ -170,8 +170,7 @@
                         </div> 
                         <br>
                         <button type="submit" class="btn btn-primary">Guardar</button>
-                        <a href="{{ route('entrevista') }}" class="btn btn-danger">Cancelar</a>            
-                                
+                        <a href="{{ route('entrevista') }}" class="btn btn-danger">Cancelar</a>   
                     </form>
                     </div>                        
                 </div>
@@ -181,22 +180,6 @@
 </div>
 <br>
 
-
-                        
-<!-- <div class="row nota">
-    <div class="col s12 ">
-        <div class="card-title black-text">
-            <span class="card-title">Nota para la evaluación de assessment center tenga presente la
-                siguiente escala:
-            </span> <br>
-            <span class="card-content black-text">
-                Posee la competemcia (PC) Corresponde a 3 puntos <br />
-                Por Desarrollar la competemcia (PD) Corresponde a 2 puntos <br />
-                No posee la competemcia (NP) Corresponde a 1 puntos <br />
-            </span>
-        </div>
-    </div>
-</div>        -->
 </body>
 
 <br>

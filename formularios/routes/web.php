@@ -1,10 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Evaluado;
-use App\Competencia;
-use App\Compeindica;
-use App\Indicator;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,15 +14,20 @@ use App\Indicator;
 |
 */
 
-Route::get('/', 'FormController@home')->name('home');
-Route::get('entrevista', 'FormController@entrevista')->name('entrevista');
-Route::post('entrevista', 'FormController@store')->name('entrevista.store');
 
-Route::get('competencia','CompeController@competencia')->name('competencia');
-Route::post('competencia','CompeController@store')->name('competencia.store');
 
-Route::get('indicador','IndicaController@indicador')->name('indicator');
-Route::post('indicador','IndicaController@store')->name('indicator.store');
 
-Route::get('compeindica','CompeindicaController@compeindica')->name('compeindica');
-Route::post('compeindica','CompeindicaController@store')->name('compeindica.store');
+Route::view('/about','about')->name('about');
+
+Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
+
+
+
+Route::get('/contact','MessagesController@index')->name('contact');
+Route::post('/contact','MessagesController@store');
+
+
+
+Route::get('/', function(){
+    return view('home');
+})->name('home');
