@@ -4,5 +4,10 @@
 
 
 @section('content')
-    <h1>estas en home</h1>
+    <h1>Home</h1>
+    @auth
+        {{ auth()->user()->name }}
+    @endauth
+    
+
 @endsection
