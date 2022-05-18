@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "nodejs": "^0.0.0",
+    "request": "^2.88.2",
+    "source-map-resolve": "^0.6.0"
+  }
+}
