@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "hola desde la pagina de inicio";
+});
+Route::get('contacto', function(){
+    return "hola desde conbtacto";
 });
