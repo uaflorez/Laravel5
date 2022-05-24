@@ -6,7 +6,7 @@
     ],
     "content-hash": "fac753ae2702317b354e7eb283f28cbc",
     "packages": [
-        {
+        {   
             "name": "asm89/stack-cors",
             "version": "v2.0.2",
             "source": {
@@ -853,7 +853,7 @@
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
                 "league/commonmark": "^1.3",
-                "league/flysystem": "^1.1",
+                "league/flysystem": "^1.1.4",
                 "monolog/monolog": "^2.0",
                 "nesbot/carbon": "^2.31",
                 "opis/closure": "^3.6",
